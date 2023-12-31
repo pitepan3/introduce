@@ -34,7 +34,7 @@ img {
     background-color: black;
     width: 500px;
     padding: 100px 0 0 40px;
-    height: 200vh;
+    height: 300vh;
 }
 
 .sidebar-menu {
@@ -133,7 +133,7 @@ img {
 
 .main-skills-title {
     font-size: 50px;
-    padding: 100px 0 100px 0;
+    padding: 100px 0 70px 0;
     position: relative;
     width: 900px;
     margin: 0 auto;
@@ -152,4 +152,79 @@ img {
 
 .main-skills-title-sub {
     font-size: 20px;
+    padding: 30px;
+}
+
+.main-skills-contents {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.main-skills-contents::before {
+    content: ' ';
+    position: absolute;
+    background-color: #999;
+    height: 2px;
+    left: 20px;
+    right: 20px;
+    top: 50%;
+}
+
+.main-skills-contents::after {
+    content: ' ';
+    position: absolute;
+    background-color: #999;
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+}
+
+.main-skills-contents-list {
+    width: 50%;
+}
+
+.main-skills-contents-list img {
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+    border-radius: 50%;
+}
+
+.main-skills-contents-list h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.main-skills-contents-list p {
+    line-height: 1.4em;
+    padding: 0 30px 30px 30px;
+}
+
+.main-progress {
+    position: relative;
+
+}
+
+.main-progress h1 {
+    font-size: 50px;
+    font-weight: 400;
+    padding: 50px 0;
+    text-align: center;
+    width: 900px;
+    margin: 100px auto 0 auto;
+    position: relative;
+}
+
+.main-progress h1::before {
+    content: ' ';
+    background-color: #999;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: inline-block;
 }
