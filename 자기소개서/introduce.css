@@ -3,13 +3,16 @@ body {
     margin: unset;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     font-size: unset;
     font-weight: unset;
     margin: unset;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
     margin: unset;
     padding: unset;
@@ -37,8 +40,7 @@ img {
     height: 300vh;
 }
 
-.sidebar-menu {
-}
+.sidebar-menu {}
 
 .sidebar-title {
     color: white;
@@ -129,6 +131,7 @@ img {
 .main-skills {
     /* box-shadow: inset 0 0 20px blue; */
     text-align: center;
+    margin-bottom: 200px;
 }
 
 .main-skills-title {
@@ -205,7 +208,6 @@ img {
 
 .main-progress {
     position: relative;
-
 }
 
 .main-progress h1 {
@@ -214,7 +216,7 @@ img {
     padding: 50px 0;
     text-align: center;
     width: 900px;
-    margin: 100px auto 0 auto;
+    margin: 100px auto 100px auto;
     position: relative;
 }
 
@@ -227,4 +229,86 @@ img {
     top: 0;
     left: 0;
     display: inline-block;
+}
+
+.pgs-bar {
+    width: 1200px;
+    margin: 0 auto 200px auto;
+}
+
+.l_pgs {
+    background-color: #999;
+    border-radius: 3dvb;
+}
+
+.pgs-list {
+    height: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.pgs-html {
+    background-color: aqua;
+    width: 80%;
+}
+
+.pgs-js {
+    background-color: purple;
+    width: 50%;
+}
+
+.pgs-react {
+    background-color: orangered;
+    width: 50%;
+}
+
+.main-portfolio {
+}
+
+.main-portfolio h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-portfolio h1::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #999;
+    height: 1px;
+}
+
+.pf-list {
+    width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pf-list li {
+    box-shadow: inset 0 0 20px blue;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.pf-list a {
+    padding: 5px 20px 5px 20px;
+    border: 4px solid black;
 }
